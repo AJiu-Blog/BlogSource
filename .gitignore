@@ -105,3 +105,6 @@ dist
 
 # hexo init
 public/
+
+# hexo cached
+.deploy_git/
