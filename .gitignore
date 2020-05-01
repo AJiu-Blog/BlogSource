@@ -108,6 +108,3 @@ public/
 
 # hexo cached
 .deploy_git/
-
-# git submodules
-.gitmodules/
