@@ -1,0 +1,3 @@
+[submodule "public1"]
+	path = public1
+	url = git@github.com:AJiu-Blog/Ajiu-Blog.github.io.git
