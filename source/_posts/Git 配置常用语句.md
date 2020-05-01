@@ -60,7 +60,8 @@ $ git config --global user.name "xuhaiyan"
 $ git config --global user.email "haiyan.xu.vip@gmail.com"
 
 $ git config user.name "Your Name Here"
-$ git config user.email your@email.com
+$ git config user.email "your@email.com"
+
 -------------------------------
 
 生成SSH密钥
@@ -123,3 +124,22 @@ git rollback -- 放弃本地修改
 		commit cf0d692e982d8e372a07aaa6901c395eec73e356 (这里就是commitid)
 
 --------------------------------
+
+## [解决Windows下git需要每次都要ssh-add的问题](https://blog.csdn.net/xianhenyuan/article/details/92397894)
+``` bash
+git\etc\bash.bashrc
+# ssh-add
+eval "$(ssh-agent -s)"
+ssh-add ~/sshKey文件名 可添加多个
+```
+
+## 更新.gitignore后忽略不起作用的解决办法
+>进入项目目录，先把本地缓存删除，然后再提交。
+git rm -r --cached . //删除所有文件缓存
+git add . //本地添加
+git commit -m '这里写提交日志' //本地提交
+删除指定文件目录的缓存,比如说根目录下有log目录:
+git rm --cached log/
+
+## git 重新输入账号密码
+` git config --system --unset credential.helper `

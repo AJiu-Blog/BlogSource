@@ -59,7 +59,11 @@ npm install hexo-deployer-git --save
 	2.使用搜索功能前必须在Hexo目录下使用以下命令安装 hexo-generator-json-content 插件.
 
 		npm install -S hexo-generator-json-content
-		
+
+# 构建 Hexo 环境
+
+	1. npm install hexo --save
+
 # Hexo 常用语句
  
 	创建文件

@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+    <meta name="google-site-verification" content="eC5bvAtYcm3WD-SuTB9i8OkvTjAGbJQEGIipNO2INKQ">
+  
+  
+    <meta name="baidu-site-verification" content="8QcTjY2dFR">
+  
+  
+  <meta property="og:type" content="website">
+<meta property="og:title">
+<meta property="og:url" content="http://100wb.cn/index.html">
+<meta property="og:site_name">
+<meta property="og:locale" content="zh-CN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title">
+  
+    <link rel="alternate" href="/atom.xml" title type="application/atom+xml">
+  
+
+  
+
+  <link rel="icon" href="/css/images/mylogo.jpg">
+  <link rel="apple-touch-icon" href="/css/images/mylogo.jpg">
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
+  <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <style type="text/css">
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9749f0/00000000000000000001008f/27/l?subset_id=2&fvd=n5) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
+  <link rel="stylesheet" href="/css/style.css">
+
+  <script src="/js/jquery-3.1.1.min.js"></script>
+  <script src="/js/bootstrap.js"></script>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.css">
+
+  
+    <link rel="stylesheet" href="/css/home.css">
+  
+
+  
+
+  
+
+  
+  
+  
+    <link rel="stylesheet" href="/css/vdonate.css">
+  
+
+</head>
+</html>
+
+
+  <body>
+
+
+  
+    <header id="header">
+
+	<!-- 背景图模式 -->
+	
+
+    
+      <div id="intrologo" class="intro-logo" style="background-position:center; background-repeat:no-repeat; background-image: url(); background-size: auto 100%;">
+
+      <!-- Support rolling -->  
+        
+        <section class="awSlider">
+          <div class="carousel slide carousel-fade " data-ride="carousel">
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+               
+                  
+                    <div class="item active">
+                  
+                    <img id="carousel-img0" src="/css/images/sample.jpg">
+                  </div>
+
+                  <!-- 主页 index 自适应大图 -->
+                  <script>
+                      var img0 = new Image();
+                      var imageTag0 = document.getElementById("carousel-img0");
+                      img0.src = imageTag0.src;
+                      img0.onload=function(){
+                        if (img0.width / img0.height <= document.body.clientWidth / document.body.clientHeight) {
+                          imageTag0.style.width = document.body.clientWidth + "px";
+                        } else {
+                          imageTag0.style.height = document.body.clientHeight + "px";
+                          imageTag0.style.marginLeft = -(document.body.clientHeight * img0.width / img0.height - document.body.clientWidth) / 2 + "px";
+                        }
+                      };
+                  </script>
+                
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href=".carousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Geri</span>
+            </a>
+            <a class="right carousel-control" href=".carousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">İleri</span>
+            </a>
+          </div>
+        </section>
+        <script>
+          $('section.awSlider .carousel').carousel({
+              pause: '',
+              interval: 5000
+          });
+          var startImage = $('section.awSlider .item.active > img').attr('src');
+          $('section.awSlider .carousel').on('slid.bs.carousel', function () {
+              var bscn = $(this).find('.item.active > img').attr('src');
+              $('section.awSlider > img').attr('src', bscn);
+          });
+        </script>
+      
+
+    
+ 
+
+
+    <canvas width="100%" height="100%"></canvas>
+    <script>
+      var c = document.getElementsByTagName('canvas')[0],
+          x = c.getContext('2d'),
+          w = window.innerWidth,
+          h = window.innerHeight,
+          pr = window.devicePixelRatio || 1,
+          f = 90,
+          q,
+          m = Math,
+          r = 0,
+          u = m.PI*2,
+          v = m.cos,
+          z = m.random
+      c.width = w*pr
+      c.height = h*pr
+      x.scale(pr, pr)
+      x.globalAlpha = 0.6
+
+      <!-- 折线Polyline背景 -->
+      
+    </script>
+    
+
+    
+      <div id="homelogo" class="homelogo" style="background: rgba(255,255,255,1);"> 
+    
+
+        
+          <div class="homelogoback"  style="border: 1px solid #404040;" >
+            
+			<!-- 
+            <h1><a href="#content" id="logo"></a></h1>
+            <h3></h3>
+            <h5>AJiu</h5>
+			<p><a href="https://github.com/iTimeTraveler" target="_blank">Github</a></p> 
+			-->
+			
+			<h5 style=" text-align: left; padding-left: 8px; margin-bottom: 15px;">
+				<font style="vertical-align: inherit;">
+					<font style="vertical-align: inherit;/* float:  left; */">如果在这里退缩了一步</font>
+				</font>
+			</h5>
+
+			<h5 style="text-align: left; padding-left: 8px; margin-bottom: 15px;">
+				<font style="vertical-align: inherit;">
+					<font style="vertical-align: inherit;">那么过去那些重要的誓言，约定，全部就消失会不见</font>
+				</font>
+			</h5>
+			
+			<h5 style="text-align: left; padding-left: 8px; margin-bottom: 15px;">
+				<font style="vertical-align: inherit;">
+					<font style="vertical-align: inherit;">而我再也无法回到这里了</font>
+					</font>
+				</font>
+			</h5>
+			
+			<h5 style="text-align: right; padding: 0 0 0 0;">
+				<font style="vertical-align: inherit;">
+					<font style="vertical-align: inherit;">&nbsp;-&nbsp;&nbsp;罗罗诺亚·佐罗</font>
+				</font>
+			</h5>
+			
+          </div>
+        
+    
+    </div>
+  </div>
+
+  <!-- 自适应主页背景大图 -->
+  
+
+ <!-- home_logo_image居中 -->
+ 
+    <script>
+        var homelogodiv = document.getElementById("homelogo");
+        if (document.all.homelogo.offsetWidth > document.body.clientWidth) {
+          homelogodiv.style.width = document.body.clientWidth + "px";
+          homelogodiv.style.marginLeft = document.body.clientWidth * -0.5 + "px";
+        } else {
+          homelogodiv.style.width = homelogodiv.clientWidth  + "px";
+          homelogodiv.style.marginLeft = (homelogodiv.clientWidth)  * -0.5 + "px";
+        }
+    </script>
+  
+
+  <div class="intro-navigate">
+      <p class="navigater-list">
+        
+          <a id="beautifont" class="main-nav-link" href="/">首页</a>
+        
+          <a id="beautifont" class="main-nav-link" href="/archives">归档</a>
+        
+          <a id="beautifont" class="main-nav-link" href="/categories">分类</a>
+        
+          <a id="beautifont" class="main-nav-link" href="/tags">标签</a>
+        
+          <a id="beautifont" class="main-nav-link" href="/about">关于</a>
+        
+      </p>
+  </div>
+
+</header>
+  
+  <div id="container">
+    <div id="wrap">
+      
+            
+      <div id="content" class="outer">
+        
+          <section id="main" style="float:none;">
+  
+    <article id="post-开发工具记录"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2019/03/20/开发工具记录/">开发工具记录</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2019/03/20/开发工具记录/" class="article-date">
+	  <time datetime="2019-03-20T08:39:17.000Z" itemprop="datePublished">2019-03-20</time>
+	</a>
+
+      
+    <a class="article-category-link" href="/categories/开发工具/">开发工具</a>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p class="article-excerpt-content">
+           IntelliJ IDEA 注册码IntelliJ IDEA 注册码
+
+        </p>
+        <p class="article-more-link">
+          <a href="/2019/03/20/开发工具记录/#more">阅读全文</a>
+        </p>
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+      
+
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+
+  
+    <article id="post-Git 配置常用语句"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2019/03/05/Git 配置常用语句/">Git 配置常用语句</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2019/03/05/Git 配置常用语句/" class="article-date">
+	  <time datetime="2019-03-04T18:39:17.000Z" itemprop="datePublished">2019-03-05</time>
+	</a>
+
+      
+    <a class="article-category-link" href="/categories/Git/">Git</a>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p class="article-excerpt-content">
+          
+git add ., git add -u, git add -A 区别
+·  git add -A  提交所有变化
+·  git add -u  提交被修改(modified)和被删除(deleted)文件，不包括新文件(new)
+·  git add .  提交新文件(new)和被修改(modified)文件，不包括被删除(deleted)文件
+
+新建分支$ git branch newbranch  
+检查分支$ git branch 
+切换分支$ git checkout new...
+        </p>
+        <p class="article-more-link">
+          <a href="/2019/03/05/Git 配置常用语句/#more">阅读全文</a>
+        </p>
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+      
+
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+
+  
+    <article id="post-Java 知识点总结篇章"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2018/07/25/Java 知识点总结篇章/">Java 知识点总结篇章</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2018/07/25/Java 知识点总结篇章/" class="article-date">
+	  <time datetime="2018-07-24T18:39:17.000Z" itemprop="datePublished">2018-07-25</time>
+	</a>
+
+      
+    <a class="article-category-link" href="/categories/java/">java</a><a class="article-category-link" href="/categories/java/知识点总结/">知识点总结</a>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p class="article-excerpt-content">
+          Question 1: 看到知乎里总有询问Java底层是基于C还是C++这里我觉得没什么可争论的，读过《Java编程思想》就知道开篇里面的一句名言就是Java是基于C/C++
+
+        </p>
+        <p class="article-more-link">
+          <a href="/2018/07/25/Java 知识点总结篇章/#more">阅读全文</a>
+        </p>
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+      
+
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+
+  
+    <article id="post-Hexo 安装部署配置详解"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2018/07/25/Hexo 安装部署配置详解/">Hexo 安装部署配置详解</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2018/07/25/Hexo 安装部署配置详解/" class="article-date">
+	  <time datetime="2018-07-24T18:39:17.000Z" itemprop="datePublished">2018-07-25</time>
+	</a>
+
+      
+    <a class="article-category-link" href="/categories/Hexo/">Hexo</a>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p class="article-excerpt-content">
+          hexo API 一站安装https://blog.csdn.net/erchowyo/article/details/54407601
+安装 hexo$ npm install -g hexo
+初始化 hexo$ hexo init
+安装 hexo 依赖$ npm install
+生成 hexo 资源$ hexo generate
+hexo 服务$ hexo server 
+hiker: hexo-theme APIhttps://github.com/iTimeTraveler/hex...
+        </p>
+        <p class="article-more-link">
+          <a href="/2018/07/25/Hexo 安装部署配置详解/#more">阅读全文</a>
+        </p>
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+      
+
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+
+  
+    <article id="post-hello-world"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2018/04/25/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2018/04/25/hello-world/" class="article-date">
+	  <time datetime="2018-04-24T18:39:17.000Z" itemprop="datePublished">2018-04-25</time>
+	</a>
+
+      
+    <a class="article-category-link" href="/categories/Git/">Git</a><a class="article-category-link" href="/categories/Git/设计模式/">设计模式</a><a class="article-category-link" href="/categories/Git/设计模式/算法核算/">算法核算</a><a class="article-category-link" href="/categories/Git/设计模式/算法核算/大数据通缉/">大数据通缉</a><a class="article-category-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/">Hello World</a><a class="article-category-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/">Battery Related</a><a class="article-category-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/">Billing</a><a class="article-category-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/">Break Related</a><a class="article-category-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/Chain-Related/">Chain Related</a><a class="article-category-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/Chain-Related/Clutch-Related/">Clutch Related</a><a class="article-category-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/Chain-Related/Clutch-Related/Dealer-attitude/">Dealer attitude</a><a class="article-category-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/Chain-Related/Clutch-Related/Dealer-attitude/Electrical-Related/">Electrical Related</a><a class="article-category-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/Chain-Related/Clutch-Related/Dealer-attitude/Electrical-Related/Engine-Related/">Engine Related</a><a class="article-category-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/Chain-Related/Clutch-Related/Dealer-attitude/Electrical-Related/Engine-Related/Handle-Bar-Related/">Handle Bar Related</a><a class="article-category-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/Chain-Related/Clutch-Related/Dealer-attitude/Electrical-Related/Engine-Related/Handle-Bar-Related/Happy/">Happy</a><a class="article-category-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/Chain-Related/Clutch-Related/Dealer-attitude/Electrical-Related/Engine-Related/Handle-Bar-Related/Happy/Jerking/">Jerking</a><a class="article-category-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/Chain-Related/Clutch-Related/Dealer-attitude/Electrical-Related/Engine-Related/Handle-Bar-Related/Happy/Jerking/Jerking-Problem/">Jerking Problem</a><a class="article-category-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/Chain-Related/Clutch-Related/Dealer-attitude/Electrical-Related/Engine-Related/Handle-Bar-Related/Happy/Jerking/Jerking-Problem/Low-Mileage/">Low Mileage</a><a class="article-category-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/Chain-Related/Clutch-Related/Dealer-attitude/Electrical-Related/Engine-Related/Handle-Bar-Related/Happy/Jerking/Jerking-Problem/Low-Mileage/Noise/">Noise</a><a class="article-category-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/Chain-Related/Clutch-Related/Dealer-attitude/Electrical-Related/Engine-Related/Handle-Bar-Related/Happy/Jerking/Jerking-Problem/Low-Mileage/Noise/Poor-Pickup/">Poor Pickup</a><a class="article-category-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/Chain-Related/Clutch-Related/Dealer-attitude/Electrical-Related/Engine-Related/Handle-Bar-Related/Happy/Jerking/Jerking-Problem/Low-Mileage/Noise/Poor-Pickup/Running-Off/">Running Off</a><a class="article-category-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/Chain-Related/Clutch-Related/Dealer-attitude/Electrical-Related/Engine-Related/Handle-Bar-Related/Happy/Jerking/Jerking-Problem/Low-Mileage/Noise/Poor-Pickup/Running-Off/Service-Quality/">Service Quality</a><a class="article-category-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/Chain-Related/Clutch-Related/Dealer-attitude/Electrical-Related/Engine-Related/Handle-Bar-Related/Happy/Jerking/Jerking-Problem/Low-Mileage/Noise/Poor-Pickup/Running-Off/Service-Quality/Silencer-Problem/">Silencer Problem</a><a class="article-category-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/Chain-Related/Clutch-Related/Dealer-attitude/Electrical-Related/Engine-Related/Handle-Bar-Related/Happy/Jerking/Jerking-Problem/Low-Mileage/Noise/Poor-Pickup/Running-Off/Service-Quality/Silencer-Problem/Starting-Trouble/">Starting Trouble</a><a class="article-category-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/Chain-Related/Clutch-Related/Dealer-attitude/Electrical-Related/Engine-Related/Handle-Bar-Related/Happy/Jerking/Jerking-Problem/Low-Mileage/Noise/Poor-Pickup/Running-Off/Service-Quality/Silencer-Problem/Starting-Trouble/Suspension-Related/">Suspension Related</a><a class="article-category-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/Chain-Related/Clutch-Related/Dealer-attitude/Electrical-Related/Engine-Related/Handle-Bar-Related/Happy/Jerking/Jerking-Problem/Low-Mileage/Noise/Poor-Pickup/Running-Off/Service-Quality/Silencer-Problem/Starting-Trouble/Suspension-Related/Vehicle-Noise/">Vehicle Noise</a><a class="article-category-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/Chain-Related/Clutch-Related/Dealer-attitude/Electrical-Related/Engine-Related/Handle-Bar-Related/Happy/Jerking/Jerking-Problem/Low-Mileage/Noise/Poor-Pickup/Running-Off/Service-Quality/Silencer-Problem/Starting-Trouble/Suspension-Related/Vehicle-Noise/Vibration/">Vibration</a><a class="article-category-link" href="/categories/Git/设计模式/算法核算/大数据通缉/Hello-World/Battery-Related/Billing/Break-Related/Chain-Related/Clutch-Related/Dealer-attitude/Electrical-Related/Engine-Related/Handle-Bar-Related/Happy/Jerking/Jerking-Problem/Low-Mileage/Noise/Poor-Pickup/Running-Off/Service-Quality/Silencer-Problem/Starting-Trouble/Suspension-Related/Vehicle-Noise/Vibration/Washing/">Washing</a>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p class="article-excerpt-content">
+          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick StartCreate a new post1$ hexo new "My New Post...
+        </p>
+        <p class="article-more-link">
+          <a href="/2018/04/25/hello-world/#more">阅读全文</a>
+        </p>
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+      
+
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+
+  
+
+
+</section>
+        
+      </div>
+      
+        <div align="center" style="margin-top: 30px;"><hr class="hr" style="margin:0px; height:3px;"></div>
+      
+      <footer id="footer">
+  
+
+  <div class="container">
+      	<div class="row">
+		<!--
+	      <p> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/iTimeTraveler/hexo-theme-hiker" target="_blank">Hexo-theme-hiker</a> </p>
+		-->
+	      <p id="copyRightEn">Copyright &copy; 2013 - 2020 AJiu All Rights Reserved.</p>
+	      
+	      
+    		<p class="busuanzi_uv">
+				访客数 : <span id="busuanzi_value_site_uv"></span> |  
+				访问量 : <span id="busuanzi_value_site_pv"></span>
+		    </p>
+  		   
+		</div>
+
+		
+  </div>
+</footer>
+
+
+<!-- min height -->
+
+<script>
+    var wrapdiv = document.getElementById("wrap");
+    var contentdiv = document.getElementById("content");
+    var allheader = document.getElementById("allheader");
+
+    wrapdiv.style.minHeight = document.body.offsetHeight + "px";
+    if (allheader != null) {
+      contentdiv.style.minHeight = document.body.offsetHeight - allheader.offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    } else {
+      contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    }
+</script>
+
+<style type="text/css">
+	#article-nav:before{ background: #999999; }      
+	.article-nav-caption{ color: #999999; }
+</style>
+
+    </div>
+    <!-- <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/categories" class="mobile-nav-link">Categories</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tags</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+</nav> -->
+    
+<script>
+  var disqus_shortname = 'ajiu-blog';
+  
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//www.100wb.cn/js/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+
+</script>
+
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/scripts.js"></script>
+
+
+  <script src="/js/home.js"></script>
+
+
+
+
+
+
+
+
+
+
+	<div style="display: none;">
+    <script src="https://s95.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+  </div>
+
+
+
+	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+	</script>
+
+
+
+
+
+
+
+<style type="text/css">.brand{border-color: rgba(24,24,21,0.07);</style>
+
+  </div>
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="myModalLabel">设置</h2>
+      </div>
+      <hr style="margin-top:0px; margin-bottom:0px; width:80%; border-top: 3px solid #000;">
+      <hr style="margin-top:2px; margin-bottom:0px; width:80%; border-top: 1px solid #000;">
+
+
+      <div class="modal-body">
+          <div style="margin:6px;">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" onclick="javascript:setFontSize();" aria-expanded="true" aria-controls="collapseOne">
+              正文字号大小
+            </a>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            您已调整页面字体大小
+          </div>
+        </div>
+      
+
+
+          <div style="margin:6px;">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" onclick="javascript:setBackground();" aria-expanded="true" aria-controls="collapseTwo">
+              夜间护眼模式
+            </a>
+        </div>
+          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+          <div class="panel-body">
+            夜间模式已经开启，再次单击按钮即可关闭 
+          </div>
+        </div>
+
+        <div>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;关 于&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        </div>
+         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+          <div class="panel-body">
+            
+          </div>
+          <div class="panel-body">
+            Copyright © 2020 AJiu All Rights Reserved.
+          </div>
+        </div>
+      </div>
+
+
+      <hr style="margin-top:0px; margin-bottom:0px; width:80%; border-top: 1px solid #000;">
+      <hr style="margin-top:2px; margin-bottom:0px; width:80%; border-top: 3px solid #000;">
+      <div class="modal-footer">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <a id="rocket" href="#top" class=""></a>
+  <script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+  
+</body>
+</html>

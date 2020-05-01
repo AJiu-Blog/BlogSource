@@ -59,16 +59,16 @@
               <% } else {%>
                 <div class="item" style="max-height:825px; overflow: hidden;">
               <% } %>
-                <img id="carousel-img<%= i %>" src="<%- partial('post/urlconvert', {tempUrl: theme.about_big_image[i]}) %>">
+                <img id="carousel-img<%= i %>" src="<%- partial('post/urlconvert', {tempUrl: theme.about_big_image[i]}) %>" onerror="console.log('图片不能被加载。')">
               </div>
 
-              <!-- 自适应大图 -->
+              <!-- 关于 自适应大图-->
               <script>
               	  var carouselResize = function() {
               	  	  var h = document.body.clientHeight / 3;
 	                  var img<%= i %> = new Image();
 	                  var imageTag<%= i %> = document.getElementById("carousel-img<%= i %>");
-	                  img<%= i %>.src = imageTag<%= i %>.src;
+	                  img<%= i %>.src = imageTag<%= i %>.src + '?t=' + (new Date().getTime()/10000000000000);;
 	                  img<%= i %>.onload=function(){
 	                    if (img<%= i %>.width / img<%= i %>.height <= document.body.clientWidth / h) {
 	                      imageTag<%= i %>.style.width = document.body.clientWidth + "px";
