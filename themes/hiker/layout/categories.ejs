@@ -1,0 +1,61 @@
+<style type="text/css">
+
+	div.archives-tags-wrap{
+		line-height: 27px;
+		width: 837px;
+		height: 160px;
+	}
+
+	blockquote{
+		height: 189px;
+	}
+
+	blockquote > a {
+		float: left;
+	}
+
+</style>
+
+<div class="archives-wrap" style="margin: 0px;">
+	<div class="col-lg-10 col-lg-offset-1 col-md-10">
+		
+		<!-- 分类云 -->
+		
+		<div class="archives-tags-wrap">
+			<% if(site.categories.length) { %>
+			<blockquote>
+				<% site.categories.sort('name').map(function(category){  %>
+						<a class="category-list-link" href="/<%- category.path %>"><%- category.name %>&nbsp;|</a>
+				<% }) %>
+            </blockquote>
+			<% } %>
+		</div>
+		
+		
+		<script type="text/javascript" charset="utf-8">
+
+			$("div.archives-tags-wrap > blockquote > a:last").text($("div.archives-tags-wrap > blockquote > a:last").text().replace('|',''));
+			
+		</script>
+		
+		<!-- 分类列表 -->
+
+        <% site.categories.sort('name').map(function(category){  %>
+        <div class="archives-wrap">
+            <div class="archive-year-wrap" id="<%= category.name %>">
+                <h1 class="archive-category"><%= category.name %></h1>
+            </div>
+            <div class="archives">
+                <% category.posts.sort('-date').map(function(post, i){  %>
+                    <%- partial('_partial/archive-post', {post: post, index: true}) %>
+                    <% if (post.subtitle && post.subtitle.length) { %>
+                        <h3 class="post-subtitle">
+                            <%- post.subtitle %>
+                        </h3>
+                    <% } %>
+                <% }) %>
+            </div>
+        </div>
+        <% }) %>
+	</div>
+</div>

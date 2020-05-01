@@ -1,0 +1,157 @@
+
+
+
+<div id="cloud" style="margin-top:80px;"></div>
+
+
+
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<script src="https://cdn.bootcss.com/d3-cloud/1.2.5/d3.layout.cloud.js"></script>
+<script type="text/javascript" >
+
+
+var cloudwords = [];
+
+<% site.tags.map(function(tag){  %>
+	cloudwords.push("<%= tag.name %>");
+<% }) %>
+
+
+
+var fill = d3.scale.category20();
+var words = {
+  "Battery Related": "52382",
+  "Billing": "52412",
+  "Break Related": "52490",
+  "Chain Related": "52471",
+  "Clutch Related": "52468",
+  "Dealer attitude": "52488",
+  "Electrical Related": "52352",
+  "Engine Related": "52446",
+  "Handle Bar Related": "52486",
+  "Happy": "52472",
+  "Jerking": "52325",
+  "Jerking Problem": "52325",
+  "Low Mileage": "52489",
+  "Noise": "52462",
+  "Poor Pickup": "52406",
+  "Running Off": "52242",
+  "Service Quality": "52488",
+  "Silencer Problem": "52468",
+  "Starting Trouble": "52490",
+  "Suspension Related": "52365",
+  "Vehicle Noise": "52467",
+  "Vibration": "52463",
+  "Washing": "52488"
+};
+var max_freq = 52490;
+//var cloudwords = ["Battery Related", "Billing", "Break Related", "Chain Related", "Clutch Related", "Dealer attitude", "Electrical Related", "Engine Related", "Handle Bar Related", "Happy", "Jerking", "Jerking Problem", "Low Mileage", "Noise", "Poor Pickup", "Running Off", "Service Quality", "Silencer Problem", "Starting Trouble", "Suspension Related", "Vehicle Noise", "Vibration", "Washing"];
+var url = 'http://maguscc.tvsmotor.co.in/?q=feedbacks-details/';
+var width = 600,
+  height = 900;
+var maxsize = 1;
+/*
+  cloudwords.sort('length').forEach(function(tag){
+    var length = tag.length;
+    if(length > maxsize)
+        maxsize = length;
+  });
+*/
+var arr = [];
+  cloudwords.forEach(function(tag){
+     arr.push({"name": tag,"num" : tag.length});
+  });
+  // console.log(arr);
+  cloudwords = arr.map(function(d) {
+      var text = d.name.replace(/[^\x00-\xff]/g,"ab");//对中文的投机处理，用ab代替中文字符
+      return {name:d.name, text: text, size : Math.log(d.num)/(Math.log(maxsize)-Math.log(1)) * 15 + 30};
+   });
+var leaders = cloudwords
+  .map(function(d) {
+    return {
+      text: d.name,
+      size: d.num + (words[d]/ max_freq) * 0.9 * 30
+    };
+  })
+
+var leaderScale = d3.scale.linear().range([1, 20]);
+
+leaderScale.domain([d3.min(leaders, function(d) {
+    return d.size;
+  }),
+  d3.max(leaders, function(d) {
+    return d.size;
+  })
+]);
+
+// Next you need to use the layout script to calculate the placement, rotation and size of each word:
+
+d3.layout.cloud().size([width, height])
+  .words(leaders)
+  .padding(~~(5+Math.random()+10 * 0.5))
+  .rotate(function() { return ~~(Math.random() * 5) * 90; })
+  .font("Impact")
+  .fontSize(function(d) {
+    return ~~(10+Math.random()+10 * 0.5);;
+  })
+  .on("end", drawCloud)
+  .start();
+var w = 100, h = 100;
+function drawCloud(words) {
+	var _mouseleave = '';
+  d3.select("#cloud").append("svg")
+    .attr("width", w)
+      .attr("height", h)
+      .attr("text-align", "center")
+      .attr('font-weight', 'bold')
+      .append("g")
+      .attr("transform", "translate(" + d3.layout.cloud().size()[0] / 2 + "," + d3.layout.cloud().size()[1] / 2 + ")")
+    .selectAll("text")
+    .data(words)
+    .enter().append("text")
+    .style("font-family", "Impact")
+    .style("font-weight", "bold") 
+    .style("fill", function(d, i) {
+	//console.log(d.text+"-"+fill(i));
+	if(fill(i) != '#d62728' && fill(i) != '#2ca02c' && fill(i) != '#d62728'){
+		//console.log('#d62728'+"|"+fill(i));
+      return fill(i);
+	}else{
+      return fill(i*i);
+	}
+    })
+    .attr("text-anchor", "middle")
+    .attr("transform", function(d) {
+      return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+    })
+    .text(function(d) {
+      return d.text;
+    })
+    .on("click", function(d, i) {
+      window.open("/tags/" + d.text.replace(/\s+/g,"-"), "_self");
+    })
+	.on("mouseover", function(d, i) {
+		_mouseleave = $($(this)[0]).attr('style');
+		$($(this)[0]).attr('style','font-family: Impact; fill: rgb(247, 6, 55);');
+    })
+	.on("mouseleave", function(d, i) {
+		$($(this)[0]).attr('style', _mouseleave);
+		_mouseleave = '';
+    })
+  
+    .style("font-size", function(d) {
+      return leaderScale(d.size) + "px";
+    })
+    
+}
+
+// set the viewbox to content bounding box (zooming in on the content, effectively trimming whitespace)
+
+var svg = document.getElementsByTagName("svg")[0];
+var bbox = svg.getBBox();
+var viewBox = [bbox.x, bbox.y, bbox.width, bbox.height].join(" ");
+svg.setAttribute("viewBox", viewBox);
+
+
+</script>
+

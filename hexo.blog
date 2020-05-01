@@ -1,0 +1,22 @@
+
+ Hexo 环境配置
+
+	1.手动初始化 Hexo init
+ 
+	2.覆盖 public，source，tag_config，themes，_config.yml 文件/夹
+	
+	2.使用搜索功能前必须在Hexo目录下使用以下命令安装 hexo-generator-json-content 插件.
+
+		npm install -S hexo-generator-json-content
+	3.支持Hexo 提交git
+		npm install --save hexo-deployer-git	
+		
+
+ Hexo 常用语句
+ 
+	创建文件
+	$ hexo new [layout] <title>
+
+	创建文件
+	$ hexo new page [layout] <title>
+

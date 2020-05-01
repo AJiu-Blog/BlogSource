@@ -1,0 +1,36 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+	<head>
+		<title>Construct Website Template | Home :: W3layouts</title>
+		<link href="comingsoon/css/style.css" rel="stylesheet" type="text/css"  media="all" />
+		<link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<script src="comingsoon/js/jquery.min.js"></script>
+		<script src="comingsoon/js/jquery.countdown.js"></script>
+		<script src="comingsoon/js/script.js"></script>
+		<link rel="stylesheet" href="css/jquery.countdown.css" />	
+	</head>
+	<body>
+		<!---start-content--->
+		<div class="content">
+			<div class="content-grid">
+				<h1>UNDER CONSTRUCTION</h1>
+				<h2> We are working on our new web site and will be on-line again in:</h2>
+				<div class="timer_wrap">
+				<div id="counter"> </div>		
+			</div>
+			</div>
+		</div>
+		<!---End-content--->
+		<!----start-copy-right---->
+		<div class="copy-right">
+				<p> &copy; 2013 Under Construction. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+			</div>
+		<!----End-copy-right---->
+	</body>
+</html>
+
