@@ -142,13 +142,23 @@ git commit -m '这里写提交日志' //本地提交
 git rm --cached log/
 
 ## git 重新输入账号密码
-` git config --system --unset credential.helper `
+	git config --system --unset credential.helper
 
 ## Git 新增子模块
-`git submodule add 子模块Git地址 子模块路径`
+	git submodule add 子模块Git地址 子模块路径
 
-`例：git submodule add https://github.com/AJiu-Blog/Ajiu-Blog.github.io.git publicSrc`
+	例：git submodule add https://github.com/AJiu-Blog/Ajiu-Blog.github.io.git publicSrc
 
 ## 更新 git 子模块为最新提交版本
-`git submodule update --remote --merge`
+	1. git submodule update --remote --merge
+
+	2. git submodule update
+
+	git add . 
+
+	git commit -m ''
+
+	git push
+	
+	推荐试用第一种方式，将子模块合并到最新版本
 
