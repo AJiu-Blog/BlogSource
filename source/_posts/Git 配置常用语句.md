@@ -143,3 +143,12 @@ git rm --cached log/
 
 ## git 重新输入账号密码
 ` git config --system --unset credential.helper `
+
+## Git 新增子模块
+`git submodule add 子模块Git地址 子模块路径`
+
+`例：git submodule add https://github.com/AJiu-Blog/Ajiu-Blog.github.io.git publicSrc`
+
+## 更新 git 子模块为最新提交版本
+`git submodule update --remote --merge`
+
